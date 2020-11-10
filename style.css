@@ -1,7 +1,9 @@
-body{
-  background-image: url("/images/car.jpg");
+.info-junk{
+  background-image: url("./images/car.jpg");
   background-position: center;
-  /* background-size: fill; cover; */
+  margin: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 section{
   color: red;
@@ -26,8 +28,9 @@ header{
   align-items: center;
   width:80%;
   margin:0 10%;
+  padding: 0;
   background-color: rgb(35, 83, 144);
-  /* ask how to get rid of space at top */
+  
   position: sticky;
   top: 0;}
 
@@ -59,4 +62,9 @@ nav a{
 
 .drop:hover .content{
   display: flex;
+}
+
+.filler{
+  font-size: 300;
+  opacity: 50%;
 }
