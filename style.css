@@ -1,29 +1,49 @@
 body{
-  margin: 0px 8px;
+  margin: 0px;
 }
+
+
 
 .info-junk{
   background-image: url("./images/car.jpg");
   background-position: center;
   margin: 0;
+  height: 70vh;
   background-size: cover;
   background-repeat: no-repeat;
 }
 section{
   color: red;
-  width:50%;
-  
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 section h1{
-  font-size: 3.5rem;
-  margin:0;
+  font-size: 5rem; 
+  margin: 0;
+}
+section h3{
+  font-size: 3rem;
 }
 section a{
-  text-decoration: none;
   background-color: cyan;
-  color: red;
+  text-decoration: none;
+  width: 125px;
 }
-
+@media screen and (max-width: 650px){
+  section h1{
+    font-size: 2rem;
+  }
+  section h3{
+    font-size: 1rem;
+  }
+  .info-junk{
+    height: 60%;
+  }
+  
+}
 
 
 header{
